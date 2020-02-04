@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Caveat Brush', cursive; */
+}
+
+header {
+    padding: 30px 10px;
+    background-image: url(images/header-bg.jpg);
+    text-align: center;
+    /* font-family: 'Caveat Brush', cursive; */
+}
+
+main {
+    margin: 30px 0;
+}
+
+main section {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    caption-side: top;
+}
+
+table caption {
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+table tr th {
+    background-color: darkgrey;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+table tr td {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+table tr:nth-child(2n) {
+    background-color: lightgrey;
+}
+
+.form-content {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form-content h2 {
+    margin-bottom: 15px;
+}
+
+.form-content .form-div {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form-content .form-div label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form-content .form-div .form-input {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Web Accessibility of Form and Table
+
+Forms: We have to use a proper structure for each form inputs: wrap each pair of label and input in a div and give proper 'for' attribute to the label and 'id' and 'placeholder' to the input. It should be in proper order so that we can easily access the input fields using tab key of the keyboard.
+
+Tables: Structure the table headers using 'th' tags and the body using 'td' tag. Adding caption and summary for more complex tables to describe the content.
+
+*/
